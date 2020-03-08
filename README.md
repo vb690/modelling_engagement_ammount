@@ -1,1 +1,1 @@
-# modelling_engagement_ammount
+# Beyond Churn Estimation: Modelling and Visualizing the Engagement Process in the Embedding Space of an Artificial Neural Network
