@@ -1,6 +1,6 @@
 # From Theory To Behaviour: Towards a General Model of Engagement
 
-Repository hosting ancillary results for the pre-print: "From Theory to Behaviour: Towards a General Model of Engagement"
+Repository hosting ancillary results for the pre-print: "From Theory to Behaviour: Towards a General Model of Engagement".
 
 ## Index 
   
