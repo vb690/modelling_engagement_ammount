@@ -2,6 +2,11 @@
 
 Repository hosting ancillary results for the pre-print: [From Theory to Behaviour: Towards a General Model of Engagement](https://arxiv.org/abs/2004.12644).
 
+:warning: **IMPORTANT** :warning:</br>
+</br>
+**The paper linked in this repository, as it currently stands, was rejected at "Conference on Games 2020" and never resubmitted. For the sake of clarity and transparency the reviews to the paper can be found in reviews.txt** </br>
+</br>
+:warning: **IMPORTANT** :warning:
 ## Index 
   
 [Home](https://github.com/vb690/modelling_engagement_ammount/wiki)   
