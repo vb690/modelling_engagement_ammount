@@ -1,0 +1,102 @@
+REVIEWER 1
+
+-1: (weak reject)
+In this submission, the authors present a model for measuring player engagement. The submission compares a model for measuring player engagement with a previous attempt that the authors created.
+While this is an interesting submission, the authors make some claims or assertions that need clarification. The suggestion that they plan to draw stronger connections between engagement and human behavior, is somewhat difficult to follow. The authors appear to assert that engagement is not human behavior. This view appears to be inconsistent with the current body of knowledge.
+It would help if the authors provided more detail on the operationalization of engagement. While, duration and frequency of interactions between the person and the object are an indicator of engagement, these are not the only indicators (see for example Beer et al. (2010)).
+The engagement process model (Figure 1), needs more clarity and discussion. It is not clear what happens before Disengagement (Extintion?), however, the model looks overly simplistic. Surely, there is a direct path between engagement and disengagement? Moreover, are the authors sure that the path between the point of engagement and sustained engagement is a direct path? Moreover, the introduction of the salience model (in Figure 2), would benefit from a deeper discussion. This reviewer would recommend that the operational description of Env as being School Days or Holidays could be further explored.
+In the methods, the authors identify the six sources of the data used to test their hypothesis. It would help to reader to learn what the rationale was for choosing these data sources and what alternatives were considered. Moreover, it would help the reader if the authors had provided more detail on the similarities and differences between these data sources. This looks like a convenience sample and may raise concerns about the generalizability of the findings to other games or genre.
+Although the base assumptions are questionable, the research itself appears to be relatively comprehensive. It would help if the authors had presented the findings based on the results on a per-game level. It is not clear if the levels of potential engagement is consistent between these games. Further, it would help if we had more detail about the experience level of the player, their age, and other factors (demographic, societal, geographic) that may also influence engagement and re-engagement. It is not clear if the authors were able to identify the engagement at a player level if this was aggregate data?
+The images in Figures 6, 7, 8 & 9 were difficult to interpret.
+
+Some room for improvement
+Throughout the submission, the authors make some assertions that could benefit from references to the literature or data to support these claims. For example, “Engagement is an extremely useful construct”, “This, however, is usually done considering an unconstrained set of game specific metrics”
+
+It would help if the authors cited both ANN and RNN in when first referenced.
+
+The authors articulate what they believe, which would be good if this was a religious conference. However, I would like to suggest that this is an hypothesis rather than a belief.
+
+The submission would benefit from a comprehensive proofread. There are numerous grammatical or typographical errors that distract the reader. Some examples, “analyses over a 3.2 millions entries”, “what Sifa at all. did in”, “However, neither group interpret”, “extinction”, framework, “appear to be be”…
+
+Conclusion
+The work is interesting, and uses a comprehensive data set. However, the research and development of the model does not appear to be complete.
+
+Works cited:
+Beer, C., Clark, K., & Jones, D. (2010). Indicators of engagement. Proceedings ascilite Sydney, 2010, 75-85.
+
+REVIEWER 2
+
+1: (weak accept)
+This paper builds upon earlier theoretical work and proposes a model of engagement which factors in a player’s behaviour, variables of the interaction with the game and features about the environment of the interaction. The authors attempt to model the underlying theory using two approaches [autoregressive ANNs (2 different models) and Melchior models] trained on an impressive dataset of 3.2m players across 6 games. The Melchior model appears to perform better than the other two approaches even though statistical significance is not reported. The paper is well written and the research direction taken is very important.
+
+My main concern and confusion: engagement is discussed well and thoroughly throughout the first sections of the paper... but then what is eventually predicted is four metrics that could --or could not--be linked to engagement: survival time, churn p, survival sessions and absence. The relationship between the definition of engagement as introduced here (I, o, Env) is far from being clear…while this is a critical aspect of what this paper is about the discussion about the link of engagement to these ad-hoc designed 4 metrics is nearly absent.
+
+Some critical related work is missing: The recent work by Melhart et al on modeling motivation in Tom Clancy’s the Division (CIG 2019) is highly relevant. Melhart et al build on self-determination theory and machine learn models of motivation from questionnaires. Earlier work by Camilleri et al ("Towards general models of player affect." ACII, 2017) tests various forms of preference learning based on general features of play to predict annotations of arousal across 3 very different 3D arcade games. That is, to the best of my knowledge, the first data-driven study on deriving general models of player experience that relies on general gameplay/behavioural data. Further, the idea of general player modelling has been introduced in the “general general game AI” framework in IEEE CIG 2015 [and references]
+
+Why did you opt to report the loss function and not standard measure of regression performance such as R^2?
+
+Baseline: what is the loss of a random ANN (AR model)? Please include it in the figures you report
+
+All figures: figures are generally very small. Please try to fit them to the column width by cutting some content from the paper. Currently, most of the figures are not clearly visible.
+
+Minor:
+
+learning context,the last layer -- > learning context, the last layer
+
+(Eqn X) -- > (Eq X) for all X throughout the paper
+
+metrics using the following formula: […] to be re-scaled.-- > using min-max normalization.
+
+Blue squares represents inputs, -- > Blue squares represent inputs,
+
+Yellow diamonds indicates categorical -- > Yellow diamonds indicate categorical
+
+more faithfully represents global geometry, -- > more faithfully represent global geometry,
+
+REVIEWER 3
+
+2: (accept)
+This paper describes three experiments using various modelling techniques to detect engagement patterns in player activity (a temporal sequence of activity measures - session time, playtime, time between session, activity type and diversity). The model also includes an environment parameter (day or week, hour of day, day of year). The models include two Recurrent Neural Nets and what is described as a MNN.
+
+Overall, the parts of the paper are quite well written. There were a few minor typos that I picked up...
+
+Section I
+"... series of practical application" -> "... series of practical applications"
+
+Section II
+"Sifa at all" -> "Sifa et al"
+
+Section III - C.
+"which allows to retain information" - > "which allows the retention of information" ??
+
+Section IV - A
+"survival sessions (st)" -> "survival sessions (ss)"
+
+In eqn 5 - I wasn't sure what Pnn was referring to
+
+In eqn 7 - you refer to a and b - not sure what you mean by this - I think it is "(a) Completing the game" and "(b) Being inactive ... "
+This is described just above - but with the switch in font for a and b it is not completely clear
+
+IV - A
+The list of games - could go into a table - apart from jc4 the various acronyms (hmg, hms, etc) are not used in the rest of paper - so could be removed. The reference to jc4 is quite confusing for the reader - I would like to see you remove the acronym and just use the game title - Just Cause 4 this would make the text clearer. You should provide standard game in-text and end-of-text referencing to refer to these games. I would recommend providing this list of game in a table along with key information for the reader - genre, release date. I would have expected somewhere in the text some discussion of different behavioural patterns in the various genres. eg hmg, hms, jc4, lisbfs. (puzzle, action, action adventure, graphic adventure). Of course space limits make this difficult and as I describe later the paper is already dense with many ideas and the narrative of the paper is complex making it difficult for a first time reader to try and pick up.
+
+I should preface the rest of this review by saying that I'm not an expert in many of the key ideas in this paper, including current work on engagement modelling from psychology, or the application of data mining / deep learning approaches to game data. So some of my comments may be somewhat naive, simply due to my lack of knowledge in these areas. I can't confirm the veracity of some of the affirmations made.
+
+Although the paper is well-written it does seem to suffer slightly from trying to include a number of different threads (theoretical engagement models, the translation of a model into the different data mining models (one new) and three experiments. The results themselves include introduction of further visualisation and analytical techniques. So the density of ideas in the one paper is quite high and sometimes the connection and discussion of each of these threads is left short. This is probably an artefact of trying to fit a lot of ideas into the page limit. While the authors accomplish this fairly well the reader (particular a more general reader like me) could have trouble joining up the dots between the various premises, assertions, methods and results. A solution might have been to include less of something and/or to focus on the key intents if the paper.
+
+To illustrate this the paper has 5 hypotheses listed in section IV B. It would be good if these were addressed more systematically in the description of the experiments, the results and then the discussion. I wanted to follow closely the thread of these questions but it was difficult to do - I think some got lost or are not explicit enough. This might improve the narrative. (Some obviously link back to assertions in the conclusion and abstract - some not so much).
+
+You make note at the beginning of the paper that the construct of "Engagement" is used differently and not always clearly defined. You reference [1]. This sentiment is also reflected in the later review..
+Hookham G. and Nesbitt K. A Systematic Review of the Definition and Measurement of Engagement in Serious Games. In ACSW 2019: Proceedings of the Australasian Computer Science Week Multiconference, January 2019 Article No.: 42 Pages 1–10https://doi.org/10.1145/3290688.3290747
+
+Of note in this is the multi-dimensional nature of "Engagement" with "Cognitive, Affective and Behavioural elements". The result is that often these uses of engagement get confused. The use of engagement in your paper is primarily related to Behavioural - but you should also be aware that Affective and Cognitive research exists. There is some interaction between these basic types of engagement eg positive affect in I leads to more behavioural use of O. There are also more complex constructs such as "flow" and "immersion" that get used - and these do tend to vary between disciplines. So no surprise for all the confusion and varied definitions. The way you use engagement is very much the behavioural dimensions - as it focuses on measuring artefacts of the engagement. This is also the dimension that gets most used in teaching and in related work on serious games for this domain. Anyway, it might be worth pointing readers to this additional review along with [1].
+
+More philosophically you assert the engagement model is generalisable to interaction between different types of O and this seems to make sense - its a pretty abstract model and I could see lots of applications. However, for me personally there are two things missing that I might lie to see.
+
+Firstly, from a theoretical perspective the fact that your model focuses only on the dynamics between I and O seems to reduce the application to domains where there is a need to also consider the dynamics in I and the dynamics in O. Adding these dynamics seems to me like a more complete description of the true complexity required to fully model fuzzy holistic concepts such as engagement. To me this is the broader HCI problem trying to understand the dynamics of the user (I) the dynamics of the software system (O) and the dynamics of the interactions between I and O (in the context of some changing Env).
+
+For for game designers adapting the reward/salience is part of the challenge of building the game (O) - typically this is based on adapting mechanics (dynamic difficulty) based on player performance but it can also include temporal behaviour measures that try to profile the player. Core mechanics in game design are more mechanistic but some design elements, like aesthetics still tend to fuzzy. The dynamics of the game player (I) are slightly more complex still and probably the reason engagement models stay more holistic. Subjective measures of the dynamics of player state (I) are quite common in literature and there are also more objective measures, typically physiological in basis that get used to determine player state. Anyway this is purely to say, that in my mind, the modelling of fuzzy concepts like "engagement" problem is possibly more complex then you suggest.
+
+Secondly, from a more practical interpretation problem it might be good to see salience split into positive and negative dimensions - of course the notion of reward encompasses both - but from a game designer perspective it seems easier to think about how some things might reduce player reward and others that increase it. To me this best matches to what is known about how I is working.
+
+Anyway apologies for this philosophical ramble, I have recommended a reasonably high ranking of the paper as it seems to cover a number of interesting discussion points for the conference audience. I'm happy that the technical approaches described seem to make sense but without spending more time on then I can't provide more detailed feedback on the different approaches.
